@@ -1,0 +1,7 @@
+- id: migrations-numbering
+  name: Verify proper numbering of migrations
+  entry: check_migrations_numbering
+  language: python
+  pass_filenames: true
+  types: [file]
+  files: \d+_.*
