@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "migrations-numbering"
-version = "0.1.0a1"
+version = "0.1.0a2"
 description = "A hook for pre-commit that checks for mis-numbered migration files."
 authors = ["Mike Mabey <mmabey@ieee.org>"]
 license = "MIT"
