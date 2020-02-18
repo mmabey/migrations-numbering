@@ -101,6 +101,8 @@ def main(files: List[click.Path], dirname: AnyStr, regex: AnyStr) -> int:
         for f_info in maybe_rename[mig_dir]:
             max_mig_num += 1
             new_name = f"{max_mig_num}{f_info.name}"
+            if f_info.file.name == new_name:
+                continue
             try:
                 f_info.file.rename(mig_dir / new_name)
             except FileNotFoundError:
